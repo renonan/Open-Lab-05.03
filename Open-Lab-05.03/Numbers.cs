@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Open_Lab_05._03
 {
@@ -6,7 +7,9 @@ namespace Open_Lab_05._03
     {
         public string FormatNum(int num)
         {
-            throw new NotImplementedException();
+            string result = string.Format("{0:n0}", num);
+            return result;
+
         }
     }
 }
